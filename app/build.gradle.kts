@@ -76,7 +76,7 @@ dependencies {
     implementation("androidx.hilt:hilt-work:1.2.0")
 
     // dagger hilt
-    implementation("com.google.dagger:hilt-android:2.49")
+    implementation("com.google.dagger:hilt-android:2.51")
     kapt("com.google.dagger:hilt-compiler:2.49")
 
     // Room
