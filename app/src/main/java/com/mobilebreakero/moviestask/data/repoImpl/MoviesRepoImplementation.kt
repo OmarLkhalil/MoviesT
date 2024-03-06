@@ -12,7 +12,7 @@ class MoviesRepoImplementation @Inject constructor(
     private val movieMapper: MoviesMapper,
 ) : MoviesRepository {
     override suspend fun getMovies(language: String, page: Int, genresId: String): MoviesModel {
-        return movieMapper.fromRemoteMoviesToMoviesModel(api.getMovies(language = language, page = page))
+        return movieMapper.fromRemoteMoviesToMoviesModel(api.getMovies(language = language, page = page, genresId = "27"))
     }
 
     override suspend fun getDetails(movieId: Int, language: String): DetailsDto {

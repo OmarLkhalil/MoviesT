@@ -29,6 +29,11 @@ class HomeViewModel @Inject constructor(
 
 
     val moviesCached = moviesCacheRepo.getMovies().asLiveData()
+    fun refresh() {
+        viewModelScope.launch {
+            moviesCacheRepo.refreshMovies()
+        }
+    }
 
     private val _state = MutableStateFlow(MovieState())
     val movies: StateFlow<MovieState>

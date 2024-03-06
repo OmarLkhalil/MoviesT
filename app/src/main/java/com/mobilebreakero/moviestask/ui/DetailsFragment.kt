@@ -45,7 +45,7 @@ class DetailsFragment : Fragment(R.layout.movie_detail) {
     private fun initDetails(movie: DetailsDto) {
         binding.apply {
             Glide.with(requireContext())
-                .load("https://image.tmdb.org/t/p/w500${movie.posterPath}")
+                .load("https://image.tmdb.org/t/p/${movie.posterPath}")
                 .into(imagePoster)
             textTitle.text = movie.title
             textOverview.text = movie.overview
