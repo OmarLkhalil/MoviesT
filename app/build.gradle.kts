@@ -77,7 +77,7 @@ dependencies {
 
     // dagger hilt
     implementation("com.google.dagger:hilt-android:2.49")
-    kapt("com.google.dagger:hilt-compiler:2.49")
+    kapt("com.google.dagger:hilt-compiler:2.51")
 
     // Room
     val room_version = "2.6.1"
