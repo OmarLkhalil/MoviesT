@@ -89,7 +89,7 @@ dependencies {
     implementation("androidx.room:room-paging:$room_version")
 
     // Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
 
     val nav_version = "2.7.7"
     // navigation
