@@ -98,7 +98,7 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 
     // Glide
-    implementation("com.github.bumptech.glide:glide:4.14.1")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 
     // Paging
     implementation("androidx.paging:paging-runtime-ktx:3.2.1")
